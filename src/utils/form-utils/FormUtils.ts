@@ -154,7 +154,7 @@ export class FormUtils {
         return type;
     }
 
-    getControlForField(field: any, http, config: { token: string }, overrides?) {
+    getControlForField(field: any, http, config: any, overrides?) {
         // TODO: if field.type overrides `determineInputType` we should use it in that method or use this method
         // TODO: (cont.) as the setter of the field argument
         let type: string = this.determineInputType(field) || field.type;
